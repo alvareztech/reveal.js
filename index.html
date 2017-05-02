@@ -25,8 +25,8 @@
 <div class="reveal">
     <div class="slides">
         <section data-markdown="content/android-studio.md"
-                 data-separator="^---"
-                 data-separator-vertical="^--"
+                 data-separator="^------"
+                 data-separator-vertical="^---"
                  data-separator-notes="^Note:"
                  data-charset="utf-8">
         </section>
@@ -51,7 +51,9 @@
                 src: 'plugin/highlight/highlight.js', async: true, callback: function () {
                 hljs.initHighlightingOnLoad();
             }
-            }
+            },
+            {src: 'socket.io/socket.io.js', async: true},
+            {src: 'plugin/notes-server/client.js', async: true}
         ]
     });
 </script>
